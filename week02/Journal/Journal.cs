@@ -19,6 +19,8 @@ public class Journal
             entry.Display();
         }
     }
+    
+    // Exceeding requirements 
 
     // Save document to a database or use a different library or format such as JSON for storage.
     public void SaveToFile(string file)
