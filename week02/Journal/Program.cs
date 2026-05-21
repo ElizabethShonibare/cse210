@@ -6,9 +6,11 @@ class Program
 {
     static void Main(string[] args)
     {
+        // Exceeding requirements
         Journal theJournal = new Journal();
         PromptGenerator promptGenerator = new PromptGenerator();
 
+        // Displaying the current working directory is extra debugging/output functionality. It’s actually useful while testing file saving/loading.
         Console.WriteLine("Current working directory: " + Environment.CurrentDirectory);
 
         int choice = 0;
