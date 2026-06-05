@@ -1,51 +1,6 @@
 using System;
 using System.Collections.Generic;
 
-class Comment
-{
-    public string CommenterName { get; set; }
-    public string CommentText { get; set; }
-
-    public Comment(string commenterName, string commentText)
-    {
-        CommenterName = commenterName;
-        CommentText = commentText;
-    }
-}
-
-class Video
-{
-    public string Title { get; set; }
-    public string Author { get; set; }
-    public int Length { get; set; } // in seconds
-    public List<Comment> Comments { get; set; }
-
-    public Video(string title, string author, int length)
-    {
-        Title = title;
-        Author = author;
-        Length = length;
-        Comments = new List<Comment>();
-    }
-
-    public void AddComment(Comment comment)
-    {
-        Comments.Add(comment);
-    }
-
-    public int GetNumberOfComments()
-    {
-        return Comments.Count;
-    }
-
-    public string GetFormattedLength()
-    {
-        int minutes = Length / 60;
-        int seconds = Length % 60;
-        return $"{minutes}m {seconds}s";
-    }
-}
-
 class Program
 {
     static void Main()
