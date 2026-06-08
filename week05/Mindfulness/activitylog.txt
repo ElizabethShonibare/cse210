@@ -1,0 +1,3 @@
+Breathing Activity=1
+Reflection Activity=0
+Listing Activity=0
