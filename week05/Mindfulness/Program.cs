@@ -37,6 +37,7 @@ class Program
                     new ListingActivity().Run();
                     break;
 
+                //Exceeding requirements 
                 case "4":
                     ActivityLog.DisplayStatistics();
                     break;

@@ -3,8 +3,8 @@ using System.Threading;
 
 public abstract class Activity
 {
-    protected string _name;
-    protected string _description;
+    public string _name;
+    public string _description;
     protected int _duration;
 
     public Activity(string name, string description)
